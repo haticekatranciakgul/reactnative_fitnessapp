@@ -2,6 +2,7 @@ import react from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import Welcome from './src/pages/WelcomeScreen';
+import MemberSign from './src/pages/MemberSign';
 
 const Stack = createStackNavigator();
 
@@ -11,6 +12,7 @@ function App() {
             <Stack.Navigator>
                 <Stack.Screen name="Welcome" component={Welcome} 
                 options={{headerShown: false}}/>
+                <Stack.Screen name="MemberSignScreen" component={MemberSign} />
             </Stack.Navigator>
         </NavigationContainer>
     );
