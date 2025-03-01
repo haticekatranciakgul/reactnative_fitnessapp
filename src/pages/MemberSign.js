@@ -3,7 +3,7 @@ import { Text, SafeAreaView, View, StyleSheet, Alert } from 'react-native';
 import Input from '../components/Input/Input';
 import Button from '../components/Button'
 
-function MemberSign() {
+function MemberSign({navigation}) {
     const [userSurname, setUserSurname] = useState(null);
     const [userName, setUserName] = useState(null);
     const [userAge, setUserAge] = useState(null);
@@ -22,7 +22,8 @@ function MemberSign() {
                 userMail,
                 userHometown
             };
-        console.log(user);
+        navigation.navigate('MemberResultScreen', {user});    
+
     }
 
 
