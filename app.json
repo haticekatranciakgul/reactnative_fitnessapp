@@ -1,5 +1,6 @@
 {
   "expo": {
+     "jsEngine": "hermes",
     "name": "fitnessapp",
     "slug": "fitnessapp",
     "version": "1.0.0",
